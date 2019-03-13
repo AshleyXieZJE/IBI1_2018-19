@@ -21,7 +21,6 @@ while n != 0:
             a = a + " 2**"+ str(i)
             if n!= 0:
                 a = a + " +"
-           # print("+2**",i)
             i = i - 1            
  # if the combination equals n then stop and print
 print(a)
