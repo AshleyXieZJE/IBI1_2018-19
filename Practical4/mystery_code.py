@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: 
+# Answer: randomly select prime number in range(1,100)
 
 # Import libraries
 # randint allows drawing a random number, 
@@ -13,9 +13,11 @@ from math import ceil
 p=False
 while p==False:
     p=True
+    # random n
     n = randint(1,100)
     u = ceil(n**(0.5))
     for i in range(2,u+1):
+        # if n can be divided by any smaller number keep going
         if n%i == 0:
             p=False
 
