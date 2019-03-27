@@ -24,13 +24,12 @@ for i in S:
         g=g+1
     else:
         print("The sequence is wrong.")
-        break
 #print
-    print("{","'A'",":",a,",","'T'",":",t,",","'C'",":",c,",","'G'",":",g,"}")
+print("{","'A'",":",a,",","'T'",":",t,",","'C'",":",c,",","'G'",":",g,"}")
 #draw pie
-    import matplotlib.pyplot as plt
-    labels='A','T','C','G'
-    size=[a,t,c,g]
-    plt.pie(size,labels=labels,autopct='%1.1f%%')
-    plt.axis('equal')
-    plt.title("Pie of the four DNA nucleotide")
+import matplotlib.pyplot as plt
+labels='A','T','C','G'
+size=[a,t,c,g]
+plt.pie(size,labels=labels,autopct='%1.1f%%')
+plt.axis('equal')
+plt.title("Pie of the four DNA nucleotide")
