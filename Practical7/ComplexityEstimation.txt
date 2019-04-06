@@ -1,0 +1,5 @@
+First, pick 2 numbers from N numbers, which has N*(N-1) ways of doing it.
+Then, calculate them in 5 (or 4) ways, add the result separately to the list and delete the two calculated numbers.
+Now, do the same thing to the N-1 numbers until the list only has one number.
+The total step taken is about N*(N-1)*2*(N-1)*(N-2)*2*...*4=2^(N-2)*N*(N-1)^2*(N-2)^2*...*1.
+O(2^(N-2)*N*(N-1)^2*(N-2)^2*...*1)=O(2^(N-1)), which is HORRIBLE.
