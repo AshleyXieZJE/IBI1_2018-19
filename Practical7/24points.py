@@ -5,17 +5,17 @@ Created on Tue Apr  2 20:59:27 2019
 @author: Angel
 """
 
-
+# detect the validity of the input
 i=1
 while i:
     i=0
-    data=input("Please input positive intergers to compute 24:(use ',' to divide them)\n")
+    data=input("Please input positive intergers to compute 24:(use ',' to seperate them)\n")
     numlist=data.split(',')
     for char in numlist:
         if int(char)<=23: 
             continue
         else:
-            print('The intergers should be smaller than 24')
+            print('The input number must be integers from 1 to 23')
             i=1
             break
 
@@ -24,6 +24,9 @@ num=list(map(int,numlist))
 count=0
 
 def count_cal(n):
+    '''
+    calculate 24 points
+    '''
     global count
     count=count+1
     #when complete

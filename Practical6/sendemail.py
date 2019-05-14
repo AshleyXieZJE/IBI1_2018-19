@@ -8,16 +8,22 @@ Created on Thu Mar 28 08:50:22 2019
 import pandas as pd
 import re
 a=str()
+
+#input
 email=input('please use your zju.edu.cn email:')
 password=input('password:')
+filep_address=input('please input the file pathway of the email address:')
+filep_body=input('please input the file pathway of the email body:')
 e = re.search(r'(\S+)@(\S+)',email)
 colname=['name','EmailAddress','Subjects']
+
 #open information
-with open(r'E:\IBI\practical\address_information.csv','r') as o_info:
-    r_info=pd.read_csv(r'E:\IBI\practical\address_information.csv',names=colname)
+with open(filep_address,'r') as o_info:
+    r_info=pd.read_csv(filep_address,names=colname)
 name = r_info.name.tolist()
 emailaddress = r_info.EmailAddress.tolist()
 subjects = r_info.Subjects.tolist()
+
 #select email address
 for i in range (1,5):
     if re.match(r'\S+@\S+com',emailaddress[i]):
@@ -29,7 +35,7 @@ for i in range (1,5):
  
         sender = email
         receivers = [emailaddress[i]]  
-        with open(r'E:\IBI\practical\body.txt','r')as o_body:
+        with open(filep_body,'r')as o_body:
 #change user
             for line in o_body:
                 if re.search('User',line):

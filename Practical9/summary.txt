@@ -1,0 +1,4 @@
+About 90% of the sequences for human and mouse SOD2 protein is the same compared to 5% between human/mouse and random. 
+It is not surprising that SOD2 proteins are similar between different species because their functions are the same. 
+This also indicates that human beings and mice probably have a common ancestor. 
+However, some differences still exist, which suggests that identical amino acid sequence is not necessary for proteins to accomplish the same task.

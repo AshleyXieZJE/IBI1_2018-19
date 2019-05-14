@@ -1,0 +1,2 @@
+The most difficult part in this practical is finding the number of childnodes.
+Recursion is the best solution.
