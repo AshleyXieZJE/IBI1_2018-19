@@ -1,0 +1,4 @@
+Practical 12 was a little challenging, but it was fun. 
+The problems in this practical was somehow related to reality and I enjoyed solving these problems very much. 
+I was not sure about the importance of probabilistic models before the practical.
+After I saw the output was so different every time, I realized that probabilistic models can be used in predicting how things will go in reality.
