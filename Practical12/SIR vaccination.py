@@ -10,6 +10,9 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 
 def count(array):
+    '''
+    count people who become sick or recover
+    '''
     import collections
     a=collections.Counter(array)
     return a[0]
@@ -50,7 +53,7 @@ for n in range(10):
         array_R.append(R)
     
     #plot
-    plt.plot(array_I,label=(10*n,'%'),color=cm.viridis(n*30))
+    plt.plot(array_I,label=("{:.1%}".format(n*0.1)),color=cm.viridis(n*30))
 plt.xlabel('time')
 plt.ylabel('number of people')
 plt.title('SIR model with different vaccination rate')

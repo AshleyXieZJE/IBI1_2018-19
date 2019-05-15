@@ -66,6 +66,7 @@ def count_cal(n):
             num[j]=b
     return 0
 
+# main body
 if (count_cal(len(num))):
     print('solution exists!')
 else:

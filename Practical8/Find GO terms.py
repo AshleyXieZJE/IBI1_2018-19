@@ -26,18 +26,15 @@ obo=dom.documentElement
 terms=obo.getElementsByTagName('term')
 for term in terms:
     defstr=term.getElementsByTagName('defstr')[0]
+    
+    #find autophagosome
     if 'autophagosome' in defstr.childNodes[0].data:
         GO=[]#a line in excel
-        #print('*****GO*****')
         id=term.getElementsByTagName('id')[0].childNodes[0].data
-        #print('id:',id.childNodes[0].data)
         GO.append(id)
         name=term.getElementsByTagName('name')[0]
-        #print('name:',name.childNodes[0].data)
         GO.append(name.childNodes[0].data)
-        #print('defstr',defstr.childNodes[0].data)
         GO.append(defstr.childNodes[0].data)
-        #childnodes
         resultlist=[]
         Child(id,resultlist)
         GO.append(len(resultlist))
