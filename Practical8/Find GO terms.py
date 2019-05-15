@@ -43,5 +43,5 @@ print(result)
         
 #excel
 import pandas as pd
-pd.DataFrame(result).to_excel('output.xlsx', header=['id','name','defstr','childnodes'], index=False)
+pd.DataFrame(result).to_excel('autophagosome.xlsx', header=['id','name','defstr','childnodes'], index=False)
 

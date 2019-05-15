@@ -98,7 +98,8 @@ for i in range(count):
 print('*************result***************')
 print('score:',score)
 print('total animo acid',count)
+print('normalised score',score/count)
 print('percentage identity',"%.2f" % round(percentage,2),'%','\n')
 print('sequence1',seq1,'\n')
-print('alignment:','\n',align,'\n')
+print('alignment:','\n',align,'\n')  #graphical alignment
 print('sequence2:',seq2,'\n')

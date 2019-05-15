@@ -25,23 +25,25 @@ count=0
 
 def count_cal(n):
     '''
-    calculate 24 points
+    calculate 24 points (recursion)
     '''
     global count
     count=count+1
-    #when complete
+    #when complete (test whether 4 numbers are all used)
     if n==1:
         if(float(num[0])==24):
             return 1
         else:
             return 0
     #calculate
+    #select two numbers
     for i in range(0,n):
         for j in range(i+1,n):
             a=num[i]
             b=num[j]
             num[j]=num[n-1]
             
+            #test all arithmetic combinations for two numbers
             num[i]=a+b
             if(count_cal(n-1)):
                 return 1
@@ -54,6 +56,7 @@ def count_cal(n):
             if(count_cal(n-1)):
                 return 1
             
+            #test if the dividend is zero
             if a:
                 num[i]=b/a
                 if(count_cal(n-1)):

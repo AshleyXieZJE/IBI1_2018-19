@@ -1,0 +1,14 @@
+mouse human comparison
+a BLOSUM score               1091
+a normalised BLOSUM score    4.914414414414415
+a % identity                 89.64%
+
+mouse random seq comparison  
+a BLOSUM score               -250
+a normalised BLOSUM score    -1.1261261261261262
+a % identity                 5.86%
+
+human random seq comparison
+a BLOSUM score               -250
+a normalised BLOSUM score    -1.1261261261261262
+a % identity                 5.41%
