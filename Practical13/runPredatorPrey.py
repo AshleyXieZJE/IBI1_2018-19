@@ -149,6 +149,9 @@ def xml_to_cps():
     cpsFile = open("predator-prey-copy.cps","w",encoding='utf-8')
     cpsTree.writexml(cpsFile)
     cpsFile.close()
+
+
+
 #Changing values and running the simulation again
 import xml.dom.minidom
 import os
@@ -187,6 +190,7 @@ xml_to_cps()
 
 #use the new cps file to create new modelresults
 os.system("CopasiSE.exe predator-prey-copy.cps")
+
 #use the new results to plot
 import csv
 results = []
