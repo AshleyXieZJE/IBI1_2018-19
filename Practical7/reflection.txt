@@ -1,8 +1,4 @@
 This practical was very difficult.
 I cannot do this without the help of sample code.
-Also, I found some mistakes in the guideline and sample code.
-In the guide, the example says that 3,8,3,8 has a solution, which is incorrect because all the numbers should be used to calculate 24.
-The sample code counts the solution while the program end immediately after it finds a solution.
-My code does not have these problems.
 The most difficult part in this practical is how to calculate all the possibilities no matter how many numbers are input.
 The solution is to use recursion and I learned what is recursion and how to use recursion in this practical.

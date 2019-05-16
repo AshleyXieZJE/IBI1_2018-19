@@ -57,12 +57,13 @@ def count_cal(n):
                 return 1
             
             #test if the dividend is zero
+            from fractions import Fraction
             if a:
-                num[i]=b/a
+                num[i]=Fraction(b,a)
                 if(count_cal(n-1)):
                     return 1
             if b:
-                num[i]=a/b
+                num[i]=Fraction(a,b)
                 if(count_cal(n-1)):
                     return 1
             num[i]=a
