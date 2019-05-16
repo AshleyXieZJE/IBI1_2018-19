@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2019-05-16 11:59:26 UTC --><?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?><COPASI copasiSourcesModified="0" versionDevel="197" versionMajor="4" versionMinor="24" xmlns="http://www.copasi.org/static/schema">
+<?xml version="1.0" ?><!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2019-05-16 12:39:18 UTC --><?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?><COPASI copasiSourcesModified="0" versionDevel="197" versionMajor="4" versionMinor="24" xmlns="http://www.copasi.org/static/schema">
   <ListOfFunctions>
     <Function key="Function_13" name="Mass action (irreversible)" reversible="false" type="MassAction">
       <MiriamAnnotation>
@@ -165,7 +165,7 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_1" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5003" name="k1" value="0.02"/>
+          <Constant key="Parameter_5003" name="k1" value="0.432405"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" scalingCompartment="CN=Root,Model=New Model_1,Vector=Compartments[compartment]" unitType="Default">
           <ListOfCallParameters>
@@ -195,7 +195,7 @@ Reaction scheme where the products are created from the reactants and the change
           <Substrate metabolite="Metabolite_0" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_5002" name="k1" value="0.4"/>
+          <Constant key="Parameter_5002" name="k1" value="0.295754"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" scalingCompartment="CN=Root,Model=New Model_1,Vector=Compartments[compartment]" unitType="Default">
           <ListOfCallParameters>
@@ -227,7 +227,7 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_1" stoichiometry="2"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5001" name="k1" value="0.1"/>
+          <Constant key="Parameter_5001" name="k1" value="0.289828"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" scalingCompartment="CN=Root,Model=New Model_1,Vector=Compartments[compartment]" unitType="Default">
           <ListOfCallParameters>
@@ -260,7 +260,7 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_0" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5000" name="k1" value="0.02"/>
+          <Constant key="Parameter_5000" name="k1" value="0.401952"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" scalingCompartment="CN=Root,Model=New Model_1,Vector=Compartments[compartment]" unitType="Default">
           <ListOfCallParameters>
@@ -288,35 +288,35 @@ Reaction scheme where the products are created from the reactants and the change
           <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[B]" simulationType="reactions" type="Species" value="6.0221408570000005e+22"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Initial Global Quantities" type="Group">
-          <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Values[k_predator_breeds]" simulationType="fixed" type="ModelValue" value="0.02"/>
-          <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Values[k_predator_dies]" simulationType="fixed" type="ModelValue" value="0.40000000000000002"/>
-          <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Values[k_prey_breeds]" simulationType="fixed" type="ModelValue" value="0.10000000000000001"/>
-          <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Values[k_prey_dies]" simulationType="fixed" type="ModelValue" value="0.02"/>
+          <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Values[k_predator_breeds]" simulationType="fixed" type="ModelValue" value="0.43240452345975189"/>
+          <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Values[k_predator_dies]" simulationType="fixed" type="ModelValue" value="0.29575363072428462"/>
+          <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Values[k_prey_breeds]" simulationType="fixed" type="ModelValue" value="0.28982786534679139"/>
+          <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Values[k_prey_dies]" simulationType="fixed" type="ModelValue" value="0.40195177029294127"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Kinetic Parameters" type="Group">
           <ModelParameterGroup cn="CN=Root,Model=New Model_1,Vector=Reactions[predator_breeds]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Reactions[predator_breeds],ParameterGroup=Parameters,Parameter=k1" simulationType="assignment" type="ReactionParameter" value="0.02">
+            <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Reactions[predator_breeds],ParameterGroup=Parameters,Parameter=k1" simulationType="assignment" type="ReactionParameter" value="0.43240452345975189">
               <InitialExpression>
                 &lt;CN=Root,Model=New Model_1,Vector=Values[k_predator_breeds],Reference=InitialValue&gt;
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=New Model_1,Vector=Reactions[predator_dies]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Reactions[predator_dies],ParameterGroup=Parameters,Parameter=k1" simulationType="assignment" type="ReactionParameter" value="0.40000000000000002">
+            <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Reactions[predator_dies],ParameterGroup=Parameters,Parameter=k1" simulationType="assignment" type="ReactionParameter" value="0.29575363072428462">
               <InitialExpression>
                 &lt;CN=Root,Model=New Model_1,Vector=Values[k_predator_dies],Reference=InitialValue&gt;
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=New Model_1,Vector=Reactions[prey_breeds]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Reactions[prey_breeds],ParameterGroup=Parameters,Parameter=k1" simulationType="assignment" type="ReactionParameter" value="0.10000000000000001">
+            <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Reactions[prey_breeds],ParameterGroup=Parameters,Parameter=k1" simulationType="assignment" type="ReactionParameter" value="0.28982786534679139">
               <InitialExpression>
                 &lt;CN=Root,Model=New Model_1,Vector=Values[k_prey_breeds],Reference=InitialValue&gt;
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=New Model_1,Vector=Reactions[prey_dies]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Reactions[prey_dies],ParameterGroup=Parameters,Parameter=k1" simulationType="assignment" type="ReactionParameter" value="0.02">
+            <ModelParameter cn="CN=Root,Model=New Model_1,Vector=Reactions[prey_dies],ParameterGroup=Parameters,Parameter=k1" simulationType="assignment" type="ReactionParameter" value="0.40195177029294127">
               <InitialExpression>
                 &lt;CN=Root,Model=New Model_1,Vector=Values[k_prey_dies],Reference=InitialValue&gt;
               </InitialExpression>
@@ -336,7 +336,7 @@ Reaction scheme where the products are created from the reactants and the change
       <StateTemplateVariable objectReference="ModelValue_3"/>
     </StateTemplate>
     <InitialState type="initialState">
-      0 6.0221408570000002e+20 6.0221408570000005e+22 1 0.02 0.40000000000000002 0.10000000000000001 0.02 
+      0 6.0221408570000002e+20 6.0221408570000005e+22 1 0.43240452345975189 0.29575363072428462 0.28982786534679139 0.40195177029294127 
     </InitialState>
   </Model>
   <ListOfTasks>
@@ -358,7 +358,7 @@ Reaction scheme where the products are created from the reactants and the change
         <Parameter name="Maximum duration for backward integration" type="unsignedFloat" value="1000000"/>
       </Method>
     </Task>
-    <Task key="Task_15" name="Time-Course" scheduled="true" type="timeCourse" updateModel="false"><Report append="0" confirmOverwrite="0" reference="Report_18" target="modelResults.csv"/><Report append="0" confirmOverwrite="0" reference="Report_18" target="modelResults.csv"/><Report append="0" confirmOverwrite="0" reference="Report_18" target="modelResults.csv"/><Report append="0" confirmOverwrite="0" reference="Report_18" target="modelResults.csv"/><Report append="0" confirmOverwrite="0" reference="Report_18" target="modelResults.csv"/><Report append="0" confirmOverwrite="0" reference="Report_18" target="modelResults.csv"/><Report append="0" confirmOverwrite="0" reference="Report_18" target="modelResults.csv"/><Report append="0" confirmOverwrite="0" reference="Report_18" target="modelResults.csv"/>
+    <Task key="Task_15" name="Time-Course" scheduled="true" type="timeCourse" updateModel="false"><Report append="0" confirmOverwrite="0" reference="Report_18" target="modelResults.csv"/>
       <Problem>
         <Parameter name="AutomaticStepSize" type="bool" value="0"/>
         <Parameter name="StepNumber" type="unsignedInteger" value="200"/>
@@ -559,7 +559,7 @@ Reaction scheme where the products are created from the reactants and the change
     </Task>
   </ListOfTasks>
   <ListOfReports>
-    <Report key="Report_9" name="Steady-State" precision="6" separator=" " taskType="steadyState">
+    <Report key="Report_9" name="Steady-State" precision="6" separator="	" taskType="steadyState">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -567,7 +567,7 @@ Reaction scheme where the products are created from the reactants and the change
         <Object cn="CN=Root,Vector=TaskList[Steady-State]"/>
       </Footer>
     </Report>
-    <Report key="Report_10" name="Elementary Flux Modes" precision="6" separator=" " taskType="fluxMode">
+    <Report key="Report_10" name="Elementary Flux Modes" precision="6" separator="	" taskType="fluxMode">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -575,55 +575,57 @@ Reaction scheme where the products are created from the reactants and the change
         <Object cn="CN=Root,Vector=TaskList[Elementary Flux Modes],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_11" name="Optimization" precision="6" separator=" " taskType="optimization">
+    <Report key="Report_11" name="Optimization" precision="6" separator="	" taskType="optimization">
       <Comment>
         Automatically generated report.
       </Comment>
       <Header>
         <Object cn="CN=Root,Vector=TaskList[Optimization],Object=Description"/>
         <Object cn="String=\[Function Evaluations\]"/>
-        <Object cn="Separator= "/>
+        <Object cn="Separator=	"/>
         <Object cn="String=\[Best Value\]"/>
-        <Object cn="Separator= "/>
+        <Object cn="Separator=	"/>
         <Object cn="String=\[Best Parameters\]"/>
       </Header>
       <Body>
         <Object cn="CN=Root,Vector=TaskList[Optimization],Problem=Optimization,Reference=Function Evaluations"/>
-        <Object cn="Separator= "/>
+        <Object cn="Separator=	"/>
         <Object cn="CN=Root,Vector=TaskList[Optimization],Problem=Optimization,Reference=Best Value"/>
-        <Object cn="Separator= "/>
+        <Object cn="Separator=	"/>
         <Object cn="CN=Root,Vector=TaskList[Optimization],Problem=Optimization,Reference=Best Parameters"/>
       </Body>
       <Footer>
-        <Object cn="String= "/>
+        <Object cn="String=
+"/>
         <Object cn="CN=Root,Vector=TaskList[Optimization],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_12" name="Parameter Estimation" precision="6" separator=" " taskType="parameterFitting">
+    <Report key="Report_12" name="Parameter Estimation" precision="6" separator="	" taskType="parameterFitting">
       <Comment>
         Automatically generated report.
       </Comment>
       <Header>
         <Object cn="CN=Root,Vector=TaskList[Parameter Estimation],Object=Description"/>
         <Object cn="String=\[Function Evaluations\]"/>
-        <Object cn="Separator= "/>
+        <Object cn="Separator=	"/>
         <Object cn="String=\[Best Value\]"/>
-        <Object cn="Separator= "/>
+        <Object cn="Separator=	"/>
         <Object cn="String=\[Best Parameters\]"/>
       </Header>
       <Body>
         <Object cn="CN=Root,Vector=TaskList[Parameter Estimation],Problem=Parameter Estimation,Reference=Function Evaluations"/>
-        <Object cn="Separator= "/>
+        <Object cn="Separator=	"/>
         <Object cn="CN=Root,Vector=TaskList[Parameter Estimation],Problem=Parameter Estimation,Reference=Best Value"/>
-        <Object cn="Separator= "/>
+        <Object cn="Separator=	"/>
         <Object cn="CN=Root,Vector=TaskList[Parameter Estimation],Problem=Parameter Estimation,Reference=Best Parameters"/>
       </Body>
       <Footer>
-        <Object cn="String= "/>
+        <Object cn="String=
+"/>
         <Object cn="CN=Root,Vector=TaskList[Parameter Estimation],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_13" name="Metabolic Control Analysis" precision="6" separator=" " taskType="metabolicControlAnalysis">
+    <Report key="Report_13" name="Metabolic Control Analysis" precision="6" separator="	" taskType="metabolicControlAnalysis">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -631,11 +633,12 @@ Reaction scheme where the products are created from the reactants and the change
         <Object cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Object=Description"/>
       </Header>
       <Footer>
-        <Object cn="String= "/>
+        <Object cn="String=
+"/>
         <Object cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_14" name="Lyapunov Exponents" precision="6" separator=" " taskType="lyapunovExponents">
+    <Report key="Report_14" name="Lyapunov Exponents" precision="6" separator="	" taskType="lyapunovExponents">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -643,11 +646,12 @@ Reaction scheme where the products are created from the reactants and the change
         <Object cn="CN=Root,Vector=TaskList[Lyapunov Exponents],Object=Description"/>
       </Header>
       <Footer>
-        <Object cn="String= "/>
+        <Object cn="String=
+"/>
         <Object cn="CN=Root,Vector=TaskList[Lyapunov Exponents],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_15" name="Time Scale Separation Analysis" precision="6" separator=" " taskType="timeScaleSeparationAnalysis">
+    <Report key="Report_15" name="Time Scale Separation Analysis" precision="6" separator="	" taskType="timeScaleSeparationAnalysis">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -655,11 +659,12 @@ Reaction scheme where the products are created from the reactants and the change
         <Object cn="CN=Root,Vector=TaskList[Time Scale Separation Analysis],Object=Description"/>
       </Header>
       <Footer>
-        <Object cn="String= "/>
+        <Object cn="String=
+"/>
         <Object cn="CN=Root,Vector=TaskList[Time Scale Separation Analysis],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_16" name="Sensitivities" precision="6" separator=" " taskType="sensitivities">
+    <Report key="Report_16" name="Sensitivities" precision="6" separator="	" taskType="sensitivities">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -667,11 +672,12 @@ Reaction scheme where the products are created from the reactants and the change
         <Object cn="CN=Root,Vector=TaskList[Sensitivities],Object=Description"/>
       </Header>
       <Footer>
-        <Object cn="String= "/>
+        <Object cn="String=
+"/>
         <Object cn="CN=Root,Vector=TaskList[Sensitivities],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_17" name="Linear Noise Approximation" precision="6" separator=" " taskType="linearNoiseApproximation">
+    <Report key="Report_17" name="Linear Noise Approximation" precision="6" separator="	" taskType="linearNoiseApproximation">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -679,7 +685,8 @@ Reaction scheme where the products are created from the reactants and the change
         <Object cn="CN=Root,Vector=TaskList[Linear Noise Approximation],Object=Description"/>
       </Header>
       <Footer>
-        <Object cn="String= "/>
+        <Object cn="String=
+"/>
         <Object cn="CN=Root,Vector=TaskList[Linear Noise Approximation],Object=Result"/>
       </Footer>
     </Report>
@@ -691,64 +698,8 @@ Reaction scheme where the products are created from the reactants and the change
     <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
     <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration"/>
   </Table>
-</Report><Report key="Report_18" name="time course" precision="6" separator="," taskType="timeCourse">
-  <Comment>
-  </Comment>
-  <Table printTitle="1">
-    <Object cn="CN=Root,Model=New Model_1,Reference=Time"/>
-    <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
-    <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration"/>
-  </Table>
-</Report><Report key="Report_18" name="time course" precision="6" separator="," taskType="timeCourse">
-  <Comment>
-  </Comment>
-  <Table printTitle="1">
-    <Object cn="CN=Root,Model=New Model_1,Reference=Time"/>
-    <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
-    <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration"/>
-  </Table>
-</Report><Report key="Report_18" name="time course" precision="6" separator="," taskType="timeCourse">
-  <Comment>
-  </Comment>
-  <Table printTitle="1">
-    <Object cn="CN=Root,Model=New Model_1,Reference=Time"/>
-    <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
-    <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration"/>
-  </Table>
-</Report><Report key="Report_18" name="time course" precision="6" separator="," taskType="timeCourse">
-  <Comment>
-  </Comment>
-  <Table printTitle="1">
-    <Object cn="CN=Root,Model=New Model_1,Reference=Time"/>
-    <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
-    <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration"/>
-  </Table>
-</Report><Report key="Report_18" name="time course" precision="6" separator="," taskType="timeCourse">
-  <Comment>
-  </Comment>
-  <Table printTitle="1">
-    <Object cn="CN=Root,Model=New Model_1,Reference=Time"/>
-    <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
-    <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration"/>
-  </Table>
-</Report><Report key="Report_18" name="time course" precision="6" separator="," taskType="timeCourse">
-  <Comment>
-  </Comment>
-  <Table printTitle="1">
-    <Object cn="CN=Root,Model=New Model_1,Reference=Time"/>
-    <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
-    <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration"/>
-  </Table>
-</Report><Report key="Report_18" name="time course" precision="6" separator="," taskType="timeCourse">
-  <Comment>
-  </Comment>
-  <Table printTitle="1">
-    <Object cn="CN=Root,Model=New Model_1,Reference=Time"/>
-    <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
-    <Object cn="CN=Root,Model=New Model_1,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration"/>
-  </Table>
 </Report></ListOfReports>
-  <SBMLReference file="predator-prey.xml">
+  <SBMLReference file="predator-prey-copy.xml">
     <SBMLMap COPASIkey="Metabolite_0" SBMLid="A"/>
     <SBMLMap COPASIkey="Metabolite_1" SBMLid="B"/>
     <SBMLMap COPASIkey="Compartment_0" SBMLid="compartment"/>
